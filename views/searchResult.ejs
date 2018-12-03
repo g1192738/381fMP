@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Restaurants</title>
+    </head>
+    <body>
+        <H2>Showing <%= restaurant.length %> document(s)</H2>
+        <ol>
+            <% for (i in restaurant) { %>
+              <li>Name:<%= restaurant[i].name%></li>
+              <!-- <li>Borough:<%= restaurant[i].borough%></li>
+              <li>Cuisine:<%= restaurant[i].cuisine%></li>
+              <li>Street:<%= restaurant[i].address.street%></li>
+              <li>Building:<%= restaurant[i].building%></li>
+              <li>Zipcode:<%= restaurant[i].zipcode%></li> -->
+            <% } %>
+        </ol>
+    </body>
+</html>

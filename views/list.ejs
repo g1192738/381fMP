@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Display</title>
+    </head>
+    <body>
+        <H2>Showing <%= restaurants.length %> document(s)</H2>
+        <ol>
+            <% for (i in restaurants) { %>
+                <li><a href="/show?_id=<%= restaurants[i]._id%>"><%=restaurants[i].name%></a></li>
+            <% } %>
+        </ol>
+
+<a href=/show?name=<%= restaurants[i].name%>></a>
+<a href=/show?borough=<%= restaurants[i].borough%>></a>
+<a href=/show?cuisine=<%= restaurants[i].cuisine%>></a>
+	
+	<form action="/create" method="get">
+	<br><input type="submit" value="Create">
+	</form>
+
+	<form action="/logout" method="get">
+        <br><input type="submit" value="Logout">
+        </form>
+
+    </body>
+</html>
+
+
+

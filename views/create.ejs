@@ -1,0 +1,27 @@
+<html>
+<title>Create</title>
+<body>
+<header><h1>Create your document</h1></header>
+	<form action="/create" method="post" enctype="multipart/form-data">
+    	Restaurant ID: <br><input type="text" name="restaurant_id"><br>
+	<br>Name: *<br><input type="text" name="name" required><br>
+    	<br>Borough: <br><input type="text" name="borough"><br>
+	<br>Cuisine: <br><input type="text" name="cuisine"><br>
+	<br>Street: <br><input type="text" name="street"><br>
+	<br>Building: <br><input type="text" name="building"><br>
+	<br>Zip Code: <br><input type="text" name="zipcode"><br>
+	<br>GPS Coordinates (lat.): <br><input type="number" name="lat" step="any"><br>
+	<br>GPS Coordinates (lon.): <br><input type="number" name="lon" step="any"><br>
+	<br>User: <br><input type="text" name="user"><br>
+	<br>Score: <br><input type="number" name="score"><br>
+	<br>Owner: *<br><input type="text" name="owner" required><br>
+    	<br>Photo: <br><input type="file" name="filetoupload"><br>
+    	<br><input type="submit"><input type="reset" value="Reset">
+	</form>
+
+	<form><input type="button" value="Back" onclick="history.go(-1)"></form><br>
+	<form action="/logout" method="get">
+	<br><input type="submit" value="Logout">
+	</form>
+</body>
+</html>

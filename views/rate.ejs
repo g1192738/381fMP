@@ -1,0 +1,12 @@
+<html>
+<head><title>Rate</title></head>
+<body>
+<form action="/rate" method="post" enctype="multipart/form-data">
+<input type="hidden" name="_id" value="<%=_id%>">
+<label> Score (1-10):</label><br>
+<input type="number" name="scores" min="1" max="10"><br>
+<input type="submit" value="Rate">
+</form>
+</body>
+</html>
+
